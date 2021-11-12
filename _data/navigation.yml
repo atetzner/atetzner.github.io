@@ -1,0 +1,7 @@
+main:
+  - title: "Blog"
+    url: /
+  - title: "Über mich"
+    url: /ueber-mich.html
+  - title: "Kontakt"
+    url: /impressum-kontakt.html

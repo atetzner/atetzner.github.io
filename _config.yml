@@ -1,0 +1,112 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: bit-insomnia
+email: info@bit-insomnia.de
+locale: de
+timezone: Europe/Berlin
+search: true
+permalink: /:title/
+logo: /assets/images/BI_Logo.png
+
+author:
+  name: Andreas Tetzner
+  avatar: /assets/images/atetzner.jpg
+  bio: Professional Cloud-Native Java-DevOps Engineer
+  location: Ulm, DE
+  email: info@bit-insomnia.de
+  links:
+    - label: "bit-insomnia"
+      icon: "fas fa-fw fa-link"
+      url: "https://bit-insomnia.de"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/atetzner"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:your.name@email.com"
+
+description: Blog über Technik, Linux & Software-Engineering
+baseurl: ""
+url: "https://bit-insomnia.de"
+github_username:  atetzner
+repository: atetzner/atetzner.github.io
+
+# Build settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: dark
+plugins:
+  - jekyll-feed
+  - "jekyll-include-cache"
+  - jekyll-sitemap
+  - jekyll-paginate
+
+
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/atetzner"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:info@bit-insomnia.de"
+
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      date_format: "%d.%m.%Y"
+      read_time: true
+      comments: false
+      share: true
+      related: false
+      author_profile: true
+      layout: single
+
+include:
+  - "_pages"
+
+google_site_verification: GcNfAWU4C0fTd1xRHtQabuYBGgZQB5NwByU8dmpytoI
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
